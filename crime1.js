@@ -1,5 +1,7 @@
 
 //make an AJAX request for data and output the result in HTML to the page
+//these are comments
+//there are more comments
 function getDataFromAPI() {
 
     //get the user-entered values
