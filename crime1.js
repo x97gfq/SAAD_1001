@@ -1,5 +1,7 @@
 
 //make an AJAX request for data and output the result in HTML to the page
+//these are comments
+//there are more comments
 function getDataFromAPI() {
 
     //get the user-entered values
@@ -10,7 +12,7 @@ function getDataFromAPI() {
     if (geography == "" || geography.length > 100) {
         alert("You need to enter a town name.");
     } else if (year == "" || year.length != 4 || isNaN(year)) {
-        alert("You need to enter a valid year.");
+        alert("You need to enter a valid year, and you need to do it NOW!");
     } else {
         //reset the results, show the spinner
         $("#results_container").html("");
@@ -39,7 +41,7 @@ function getDataFromAPI() {
             $("#results_container").html(result);
 
             //hide the spinner
-            $("#pleasewait").hide();
+            $("#pleasewait").toggle();
 
         });    
     }
